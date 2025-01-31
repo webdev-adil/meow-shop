@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meow Shop</title>
 
-    <!-- ADLaM Display Font -->
+    <!-- ADLaM Display & Sora Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/51b5175d47.js" crossorigin="anonymous"></script>
@@ -25,6 +26,13 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 
     <script>
@@ -34,7 +42,8 @@
                     colors: {
                         clifford: '#da373d',
                         navcolor: '#FFF9F4',
-                        primarycolor: '#FFDC26'
+                        primarycolor: '#FFDC26',
+                        secondarycolor:'#F9DF8A',
 
                     }
                 }
@@ -45,7 +54,7 @@
 
 </head>
 
-<body class="adlam-display-font">
+<body class="sora-font">
     <header>
 
         <!-- Navbar -->
@@ -68,9 +77,9 @@
                         <i class="fa-solid fa-magnifying-glass fa-lg hidden lg:inline-block mx-5"></i>
                         <i class="fa-regular fa-bell hidden fa-lg lg:inline-block mx-5"></i>
                         <button
-                            class="hidden lg:inline-block btn btn-outline mx-5 border-2 border-primarycolor rounded-[8px] px-5 py-1 font-extralight text-xl">Login</button>
+                            class="hidden lg:inline-block btn btn-outline mx-5 border-2 border-primarycolor rounded-[8px] px-5 py-1 font-light text-xl">Login</button>
                         <button
-                            class="btn btn-primary lg:inline-block bg-primarycolor px-5 py-2 border-0 text-black rounded-[8px]  text-xl font-extralight hidden">Register</button>
+                            class="btn btn-warning bg-primarycolor lg:inline-block px-5 py-2 border-0 text-black rounded-[8px]  text-xl font-light hidden">Register</button>
                         <div class="dropdown lg:hidden">
                             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                                 <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32"
@@ -95,29 +104,92 @@
 
         <div class="lg:w-[80%] mx-auto lg:my-[100px] my-[40px]">
             <div class="flex-col">
-                <div class="lg:w-[670px] absolute z-[1] mx-4" >
-                    <h1 class="lg:mb-5  text-3xl lg:text-5xl">
+                <div class="lg:w-[670px] absolute z-[1] mx-4">
+                    <h1 class="lg:mb-5  text-4xl lg:text-6xl adlam-display-font">
                         Pamper Your Pet, <br>Because They Deserve <br>The Best
                     </h1>
-                    <p class="py-6">
+                    <p class="py-6 text-lg">
                         Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
                         make tails wag with joy!
                     </p>
                     <button
-                        class="btn btn-warning bg-primarycolor px-5 py-2 border-0 text-black rounded-[8px]  text-xl font-extralight">Find
+                        class="btn btn-warning bg-primarycolor px-5 py-2 border-0 text-black rounded-[8px] font-light text-xl">Find
                         a Pet</button>
                 </div>
                 <img src="assets/cat-big.png" alt="" class="w-full absolute lg:relative my-[140px]">
-
             </div>
-
-
         </div>
-
     </header>
 
     <main>
-
+        <section class="lg:w-[80%] mx-auto lg:flex gap-5 grid grid-cols-2">
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/dog-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Dog</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/fish-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Fish</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/cat-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Cat</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/bird-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Birds</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/mouse-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Small pet</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+            <div class="card bg-secondarycolor w-[200px] shadow-xl">
+                <div class="avatar mx-auto my-6">
+                    <div class=" w-24 rounded-full bg-white p-6">
+                      <img src="assets/rabbit-cartoon.png" />
+                    </div>
+                  </div>
+                <div class="card-body items-center text-center pt-3">
+                  <h2 class="card-title">Rabbit</h2>
+                  <p>3 items</p>
+                </div>
+              </div>
+        </section>
     </main>
 
     <footer>
